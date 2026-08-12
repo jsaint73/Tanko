@@ -11,3 +11,41 @@ generator client {
 datasource db {
   provider = "postgresql"
 }
+
+User
+  │
+  └── Collection
+        │
+        └── MangaVolume
+              │
+              └── MangaSeries
+
+
+
+
+MangaSeries
+--------------------------------
+1 | Jojo's Bizarre Adventure
+2 | One Piece
+3 | Berserk
+4 | Jujustu Kaisen
+
+MangaVolume
+--------------------------------
+1 | One Piece | Volume 1
+2 | One Piece | Volume 2
+3 | One Piece | Volume 3
+4 | Berserk  | Volume 1
+5 | Berserk  | Volume 2
+6 | Berserk  | Volume 3
+7 | Jojo's Bizarre Adventure | Phantom Blood | Volume 1
+8 | Jojo's Bizarre Adventure | Phantom Blood | Volume 2
+9 | Jojo's Bizarre Adventure | Phantom Blood | Volume 3
+
+
+UserCollection
+-----------------------------------------------
+user | volume | purchase price | condition
+1    | 1      | $10.99         | Like New
+1    | 2      | $11.99         | Good
+1    | 4      | $15.00         | Very Good
